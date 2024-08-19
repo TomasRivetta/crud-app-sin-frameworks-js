@@ -6,7 +6,13 @@ const state = {
 };
 
 const loadNextPage = async () => {
-  await loadUsersByPage(state.currentPage + 1);
+  const users = await loadUsersByPage(state.currentPage + 1);
+  if (users.length === 0) {
+    return;
+  }
+
+  state.currentPage += 1;
+  state.users = users;
 };
 
 const loadPreviusPage = async () => {
@@ -29,6 +35,10 @@ export default {
   onUserChanged,
   reloadPage,
 
-  getUser: () => [...state.users], //PASO UN OBJETO
+  /**
+   *
+   * @returns {User[]}
+   */
+  getUsers: () => [...state.users], //PASO UN OBJETO
   getCurrentPage: () => state.currentPage, // PASO UN PRIMITIVO
 };
