@@ -15,6 +15,7 @@ const loadNextPage = async () => {
   state.users = users;
 };
 
+//TODO: TAREA HACER ANTES QUE LO OTRO
 const loadPreviusPage = async () => {
   throw new Error("No implementado");
 };
