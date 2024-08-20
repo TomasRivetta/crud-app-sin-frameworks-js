@@ -1,6 +1,69 @@
 {
   "users": [
     {
+      "id": 1,
+      "isActive": false,
+      "balance": 1397.32,
+      "avatar": "http://placehold.it/32x32",
+      "first_name": "Ryan",
+      "last_name": "Kent",
+      "gender": "male"
+    },
+    {
+      "id": 2,
+      "isActive": true,
+      "balance": 1120.82,
+      "avatar": "http://placehold.it/32x32",
+      "first_name": "Francine",
+      "last_name": "Ingram",
+      "gender": "female"
+    },
+    {
+      "id": 3,
+      "isActive": true,
+      "balance": 2010.88,
+      "avatar": "http://placehold.it/32x32",
+      "first_name": "Lee",
+      "last_name": "Howe",
+      "gender": "male"
+    },
+    {
+      "id": 4,
+      "isActive": false,
+      "balance": 1601.54,
+      "avatar": "http://placehold.it/32x32",
+      "first_name": "Henry",
+      "last_name": "Hunt",
+      "gender": "male"
+    },
+    {
+      "id": 5,
+      "isActive": false,
+      "balance": 1455.08,
+      "avatar": "http://placehold.it/32x32",
+      "first_name": "Mia",
+      "last_name": "Wade",
+      "gender": "female"
+    },
+    {
+      "id": 6,
+      "isActive": false,
+      "balance": 2950.3,
+      "avatar": "http://placehold.it/32x32",
+      "first_name": "Tyler",
+      "last_name": "Rocha",
+      "gender": "male"
+    },
+    {
+      "id": 7,
+      "isActive": false,
+      "balance": 1985.59,
+      "avatar": "http://placehold.it/32x32",
+      "first_name": "Harris",
+      "last_name": "Francis",
+      "gender": "male"
+    },
+    {
       "id": 8,
       "isActive": false,
       "balance": 2143.38,
@@ -366,7 +429,7 @@
       "balance": 1938.58,
       "avatar": "http://placehold.it/32x32",
       "first_name": "Rosemary",
-      "last_name": "Foremannn",
+      "last_name": "Foreman",
       "gender": "female"
     },
     {
@@ -386,13 +449,6 @@
       "first_name": "Mcbride",
       "last_name": "Woodward",
       "gender": "male"
-    },
-    {
-      "balance": 144,
-      "first_name": "gdfgdgdfgfd",
-      "isActive": true,
-      "last_name": "fsfsf",
-      "id": 51
     }
   ]
 }
