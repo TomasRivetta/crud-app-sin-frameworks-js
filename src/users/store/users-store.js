@@ -15,9 +15,13 @@ const loadNextPage = async () => {
   state.users = users;
 };
 
-//TODO: TAREA HACER ANTES QUE LO OTRO
 const loadPreviusPage = async () => {
-  throw new Error("No implementado");
+  if (state.currentPage === 1) return;
+
+  const users = await loadUsersByPage(state.currentPage - 1);
+
+  state.currentPage -= 1;
+  state.users = users;
 };
 
 //TODO: implementar

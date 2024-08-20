@@ -26,5 +26,11 @@ export const renderButtons = (element) => {
     renderTable(element);
   });
 
-  prevButton.addEventListener("click", () => {});
+  prevButton.addEventListener("click", async () => {
+    await usersStore.loadPreviusPage();
+
+    currenPageLabel.innerText = usersStore.getCurrentPage();
+
+    renderTable(element);
+  });
 };
