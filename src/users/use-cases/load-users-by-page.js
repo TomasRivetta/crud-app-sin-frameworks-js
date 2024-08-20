@@ -1,4 +1,5 @@
 import { localhostUserToModel } from "../mappers/localhost-user.mapper";
+import { User } from "../models/user";
 
 /**
  *
@@ -19,7 +20,7 @@ export const loadUsersByPage = async (page = 1) => {
   //----------
 
   //FORMA DEL PROFE
-  const users = data.data.map((userLike) => localhostUserToModel(userLike));
+  const users = data.map((userLike) => localhostUserToModel(userLike));
 
   //console.log(users); // [User,User ,x8]
   return users;
